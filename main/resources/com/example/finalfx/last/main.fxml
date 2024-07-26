@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalfx.last.mainController">
+   <children>
+      <Label layoutX="231.0" layoutY="25.0" text="BOOK CHAUFFEUR">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="50.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbRide" layoutX="107.0" layoutY="174.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" text="RIDE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="25.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbLogistic" layoutX="107.0" layoutY="215.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="118.0" text="LOGISTIC">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="25.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="88.0" layoutY="141.0" prefHeight="33.0" prefWidth="121.0" text="CHOOSE TYPE">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="30.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spDrivers" layoutX="61.0" layoutY="304.0" prefHeight="55.0" prefWidth="200.0" />
+      <Label layoutX="88.0" layoutY="277.0" text="AVAILABLE DRIVERS">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="profileImageView" fitHeight="35.0" fitWidth="47.0" layoutX="25.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+      <WebView fx:id="wvMap" layoutX="343.0" layoutY="124.0" prefHeight="334.0" prefWidth="410.0" />
+      <Label layoutX="488.0" layoutY="96.0" prefHeight="28.0" prefWidth="121.0" text="YOUR LOCATION">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="116.0" layoutY="403.0" mnemonicParsing="false" onAction="#onBook" text="SUBMIT">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="635.0" layoutY="34.0" mnemonicParsing="false" onAction="#showBookings" text="Your Bookings">
+         <font>
+            <Font name="Tw Cen MT Condensed" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
